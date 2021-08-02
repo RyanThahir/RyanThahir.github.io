@@ -14,7 +14,7 @@ body {
     max-width: 70rem;
     height: fit-content;
     position: relative;
-    width: 100vw;
+    width: 100%;
 }
 
 header {
@@ -278,7 +278,7 @@ section img {
 }
 
 .container-content {
-    display: flex;
+    display: grid;
     width: 100%;
     justify-content: space-evenly;
 }
@@ -290,10 +290,11 @@ section img {
 .content-image {
     width: 50%;
     z-index: 3;
+    justify-self: center;
 }
 
 .content-text {
-    width: 50%;
+    width: 100%;
     padding: 10vh;
     z-index: 3;
 }
