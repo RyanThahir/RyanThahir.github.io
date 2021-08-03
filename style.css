@@ -17,9 +17,14 @@ body {
     width: 100%;
 }
 
+.disclaimer-container {
+    width: 15%;
+    height: fit-content;
+}
+
 header {
     width: 100%;
-    height: 65vw;
+    height: 50vw;
     position: relative;
     overflow: hidden;
 }
@@ -57,7 +62,7 @@ header:after {
 
 .peoplekiri {
     position: absolute;
-    width: 15%;
+    width: 20%;
     height: auto;
     bottom: -25px;
     left: 0;
@@ -66,7 +71,7 @@ header:after {
 
 .peoplekanan {
     position: absolute;
-    width: 15%;
+    width: 20%;
     height: auto;
     bottom: -20px;
     right: 0;
@@ -152,9 +157,82 @@ a {
 }
 
 #toggle:checked~.menu {
-    height: 340px;
+    height: fit-content;
 }
 
+/*popup disclaimer */
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 30;
+}
+
+/* The actual popup */
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 500%;
+    height: fit-content;
+    background-color: rgb(252, 1, 1);
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 3vw;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 15%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(252, 1, 1) transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 /* Menu */
 
@@ -208,8 +286,7 @@ a {
     border-radius: 2px;
 }
 
-.bar:before,
-.bar:after {
+.bar:before, .bar:after {
     content: '';
     position: absolute;
     width: 1.55rem;
@@ -280,7 +357,6 @@ section img {
 .container-content {
     display: grid;
     width: 100%;
-    
 }
 
 .container-content:nth-child(odd) {
@@ -295,8 +371,14 @@ section img {
 
 .content-text {
     width: 100%;
-    padding: 10vh;
+    padding: 10vw;
     z-index: 3;
+}
+
+.content-text-atas {
+    padding: 10vw;
+    opacity: 1;
+    z-index: 99;
 }
 
 h3 {
@@ -324,6 +406,7 @@ p {
     height: 3px;
     background-color: #fff;
 }
+
 .border-atas {
     width: 100%;
     height: 3px;

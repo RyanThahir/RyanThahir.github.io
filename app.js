@@ -21,14 +21,11 @@ window.addEventListener('scroll', () => {
     let scroll = window.pageYOffset;
     let sectionY = section.getBoundingClientRect();
     
-    translate.forEach(element => {
-        let speed = element.dataset.speed;
-        element.style.transform = `translateY(${scroll * speed}px)`;
-    });
-
     opacity.forEach(element => {
         element.style.opacity = (scroll / (sectionY.top + section_height))+0.5;
     })
+    let speedbg = bg.dataset.speed;
+    bg.style.transform = `translateY(${scroll*speedbg}px)`
 	
 	let speedbam1 = bam1.dataset.speed;
 	bam1.style.transform = `translateX(${scroll*speedbam1*(-1)}px`;
