@@ -198,7 +198,7 @@ a {
 .popup .popuptext::after {
     content: "";
     position: absolute;
-    top: 100%;
+    bottom: 100%;
     left: 15%;
     margin-left: -5px;
     border-width: 5px;
