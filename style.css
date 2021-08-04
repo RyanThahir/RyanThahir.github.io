@@ -312,6 +312,11 @@ section .container {
 }
 
 
+section img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
 
 .content {
     color: #fff;
@@ -329,13 +334,14 @@ section .container {
 }
 
 .content-image {
+    object-fit: cover;
     width: fit-content;
     height: 50%;
     z-index: 3;
     justify-self: center;
-    opacity: 1;
     bottom: -15vw;
 }
+
 
 .content-text {
     width: 100%;
