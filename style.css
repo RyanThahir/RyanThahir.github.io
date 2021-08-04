@@ -402,7 +402,7 @@ p {
     height: 50px;
     bottom:0;
     width: 100%;
-    z-index: 1000;
+    z-index:20;
     background: linear-gradient(to top, #800000, transparent);
 }
 
