@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web Testing by IdioticPotato</title>
     <link rel="stylesheet" href="style.css">
@@ -40,28 +40,38 @@
     <section>
 
         <div class="shadow"></div>
+        <div class="container-bg translate" data-speed="-0.37"></div>
         <div class="container">
-            <div class="popup" onclick="myFunction()">
-                <h3><b>*DISCLAIMER*</b></h3>
-                <span class="popuptext" id="myPopup"><br> Makassar, 3 Agustus 2021
-                    <br>Disclaimer untuk https://ryanthahir.github.io
-                    <br>Semua informasi di situs web ini - https://ryanthahir.github.io -
-                    diterbitkan dengan itikad baik dan hanya untuk tujuan informasi umum. Penulis blog -https://ryanthahir.github.io- sangat tidak
-                    menyarankan untuk menggunakan informasi dalam blog ini untuk dikutip/digunakan dalam pembuatan
-                    tugas, artikel, blog, esai, ataupun tulisan akademik lainnya. Semua informasi dalam blog ini berasal
-                    dari referensi terdapat pada akhir blog.
-                    <br>Beberapa gambar yang kami tampilkan tidak diketahui sumbernya. Jadi, kami tidak bisa memberikan
-                    informasi dari mana gambar tersebut berasal. Kami tidak berniat untuk melanggar hak intelektual yang
-                    sah, hak artistik atau hak cipta.
-                    <br>Jika Anda adalah pemilik sah dari salah satu gambar yang diposting di
-                    -https://ryanthahir.github.io-
-                    dan tidak ingin ditampilkan atau jika Anda memerlukan kredit yang sesuai, maka silakan hubungi kami
-                    dan kami akan segera melakukan apa saja yang diperlukan. Apakah gambar harus dihapus atau kami perlu
-                    memberikan link kepada situs Anda, silakan sampaikan kepada kami.
-                </span>
+            
+            <button id="myBtn"><h3><b>DISCLAIMER</b></h3></button>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p<br> Makassar, 3 Agustus 2021
+                        <br>Disclaimer untuk https://ryanthahir.github.io
+                        <br>Semua informasi di situs web ini - https://ryanthahir.github.io -
+                        diterbitkan dengan itikad baik dan hanya untuk tujuan informasi umum. Penulis blog
+                        -https://ryanthahir.github.io- sangat tidak
+                        menyarankan untuk menggunakan informasi dalam blog ini untuk dikutip/digunakan dalam pembuatan
+                        tugas, artikel, blog, esai, ataupun tulisan akademik lainnya. Semua informasi dalam blog ini berasal
+                        dari referensi terdapat pada akhir blog.
+                        <br>Beberapa gambar yang kami tampilkan tidak diketahui sumbernya. Jadi, kami tidak bisa memberikan
+                        informasi dari mana gambar tersebut berasal. Kami tidak berniat untuk melanggar hak intelektual yang
+                        sah, hak artistik atau hak cipta.
+                        <br>Jika Anda adalah pemilik sah dari salah satu gambar yang diposting di
+                        -https://ryanthahir.github.io-
+                        dan tidak ingin ditampilkan atau jika Anda memerlukan kredit yang sesuai, maka silakan hubungi kami
+                        dan kami akan segera melakukan apa saja yang diperlukan. Apakah gambar harus dihapus atau kami perlu
+                        memberikan link kepada situs Anda, silakan sampaikan kepada kami.</p>
+                </div>
+
             </div>
-            <div class="container-bg translate" data-speed="-0.37"></div>
             <div class="container-content">
+                <div class="content-image" style="bottom: 0;">
+                    <img src="gbr/mental.png">
+                </div>
                 <div class="content-text-atas">
                     <h3 class="title" style="text-align: center;">
                         Hal-hal yang dapat dilakukan untuk menjaga kesehatan mental selama masa pandemi
@@ -161,10 +171,10 @@
                             lainnya diasosiasikan dengan
                             berkurangnya gejala penyakit mental dan <i>well-being</i>(keadaan individu dari segi
                             kebahagiaan, stres, kesehatan fisik dan mental,
-                            serta kualitas hidup) yang lebih baik. Selain itu hobi yang lebih fisik seperti seperti
+                            serta kualitas hidup) yang lebih baik. Selain itu hobi yang fisikal seperti seperti
                             olahraga bahkan berkebun dapat
                             mempengaruhi kesehatan mental secara positif melalui mekanisme fisiologis seperti mengurangi
-                            tekanan darah, dan mengurangi
+                            tekanan darah, serta mengurangi
                             produksi hormon stres (kortisol).</p>
                     </div>
                 </div>
@@ -175,16 +185,31 @@
                         Referensi
                     </h3>
                     <div class="border-atas"></div>
-                    <p class="text" style="text-align: left;">WHO:<a href="https://www.who.int/news-room/fact-sheets/detail/mental-health-strengthening-our-response"><i>Mental health: strengthening our response</i></a>
-                    <br>The Guardian:<a href="https://www.theguardian.com/science/2009/feb/15/psychology-usa"><i>Keeping a diary makes you happy</i></a>
-                    <br>Mental Health UK:<a href="https://www.mentalhealth.org.uk/blog/importance-sleep"><i>The importance of sleep</i></a>
-                    <br>Mental Health UK:<a href="https://www.mentalhealth.org.uk/publications/sleep-report"><i>Sleep Matters: The Impact Of Sleep On Health And Wellbeing</i></a>
-                    <br>Medical News Today:<a href="https://www.medicalnewstoday.com/articles/sleep-and-mental-health"><i>The close relationship between sleep and mental health</i></a>
-                    <br>NCBI:<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4769029/"><i>Meditation and Yoga can Modulate Brain Mechanisms that affect Behavior and Anxiety-A Modern Scientific Perspective</i></a>
-                    <br>NCBI:<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3193654/"><i>Exploring the therapeutic effects of yoga and its ability to increase quality of life</i></a>
-                    <br>medrxiv:<a href="https://www.medrxiv.org/content/10.1101/2020.08.18.20177345v1.full.pdf"><i>Time-use and mental health during the COVID-19 pandemic: a panel analysis of 55,204 adults followed across 11 weeks of lockdown in the UK</i></a>
-                    <br><a href=""><i></i></a>
-                </p>
+                    <p class="text" style="text-align: left;">WHO:<a
+                            href="https://www.who.int/news-room/fact-sheets/detail/mental-health-strengthening-our-response"><i>Mental
+                                health: strengthening our response</i></a>
+                        <br>The Guardian:<a
+                            href="https://www.theguardian.com/science/2009/feb/15/psychology-usa"><i>Keeping a diary
+                                makes you happy</i></a>
+                        <br>Mental Health UK:<a href="https://www.mentalhealth.org.uk/blog/importance-sleep"><i>The
+                                importance of sleep</i></a>
+                        <br>Mental Health UK:<a
+                            href="https://www.mentalhealth.org.uk/publications/sleep-report"><i>Sleep Matters: The
+                                Impact Of Sleep On Health And Wellbeing</i></a>
+                        <br>Medical News Today:<a
+                            href="https://www.medicalnewstoday.com/articles/sleep-and-mental-health"><i>The close
+                                relationship between sleep and mental health</i></a>
+                        <br>NCBI:<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4769029/"><i>Meditation and Yoga
+                                can Modulate Brain Mechanisms that affect Behavior and Anxiety-A Modern Scientific
+                                Perspective</i></a>
+                        <br>NCBI:<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3193654/"><i>Exploring the
+                                therapeutic effects of yoga and its ability to increase quality of life</i></a>
+                        <br>medrxiv:<a
+                            href="https://www.medrxiv.org/content/10.1101/2020.08.18.20177345v1.full.pdf"><i>Time-use
+                                and mental health during the COVID-19 pandemic: a panel analysis of 55,204 adults
+                                followed across 11 weeks of lockdown in the UK</i></a>
+                        <br><a href=""><i></i></a>
+                    </p>
                 </div>
             </div>
         </div>
