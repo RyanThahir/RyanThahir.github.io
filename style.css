@@ -188,9 +188,10 @@ a {
   #myBtn{
       background-color: #800000;
       border: 1px solid rgb(255, 255, 255);
-      border-radius: 2px;
+      border-radius: 5px;
       padding: 10px;
       margin-top: 10px;
+      margin-left: 10px;
 
   }
   
