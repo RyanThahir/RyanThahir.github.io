@@ -311,11 +311,7 @@ section .container {
     width: 200%;
 }
 
-section img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-}
+
 
 .content {
     color: #fff;
